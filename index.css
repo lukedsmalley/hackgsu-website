@@ -1,0 +1,185 @@
+
+body {
+  margin: 0;
+  font-family: Lato, Geneva, Verdana, sans-serif;
+  color: white; 
+  background-color: #161616;
+  background-size: cover;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@keyframes skyline {
+  from {
+    left: 0;
+  } to {
+    left: -100%;
+  }
+}
+
+.skyline {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  animation: 30s linear 0s infinite normal none skyline;
+}
+
+.header {
+  position: absolute;
+  top: 50vmin;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes logo {
+  from {
+    width: 50vmin;
+    margin-left: -25vmin;
+  } to {
+    width: 30vmin;
+    margin-left: -15vmin;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 30vmin;
+  left: 50vw;
+  width: 50vmin;
+  margin-top: -15vmin;
+  margin-left: -25vmin;
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards logo; 
+}
+
+.slogan, .title {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+b {
+  font-weight: 300;
+}
+
+
+@keyframes shutters {
+  from {
+    transform: rotate(0);
+  } to {
+    transform: rotate(10deg); 
+  }
+}
+
+.shutters {
+  position: absolute;
+  top: -25vh;
+  left: -25%;
+  height: 150vh;
+  width: 150%;
+  overflow: hidden;
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards shutters;
+}
+
+
+@keyframes left-shutter {
+  from {
+    left: 0;
+  } to {
+    left: -32%;
+  }
+}
+
+@keyframes right-shutter {
+  from {
+    left: calc(50% - 2px);
+  } to {
+    left: 82%;
+  }
+}
+
+.shutter {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #161616;
+}
+
+.left-shutter {
+  left: 0;
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards left-shutter;
+}
+
+.right-shutter {
+  left: calc(50% - 3px);
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards right-shutter;
+}
+
+
+@keyframes shutter-border {
+  from {
+    top: 50%;
+    height: 0;
+  } to {
+    top: 0;
+    height: 100%;
+  }
+}
+
+@keyframes shutter-border-2 {
+  from {
+    width: 3px;
+  } to {
+    width: 20%;
+  }
+}
+
+.shutter-border {
+  position: absolute;
+  top: 50%;
+  height: 0;
+  width: 3px;
+  background-color: #0039A6;
+  animation: 0.5s ease-in-out 0s 1 normal forwards shutter-border, 0.5s ease-in-out 0.5s 1 normal forwards shutter-border-2;
+}
+
+.left-shutter-border {
+  right: 0;
+}
+
+.right-shutter-border {
+  left: 0;
+}
+
+
+@keyframes shutter-shuttle {
+  from {
+    top: 0;
+  } to {
+    top: -100%;
+  }
+}
+
+.shutter-shuttle {
+  position: absolute;
+  top: 0;
+  height: 200%;
+  width: 16px;
+}
+
+.left-shutter-shuttle {
+  right: 0;
+  animation: 10s linear 0.5s infinite normal none shutter-shuttle;
+}
+
+.right-shutter-shuttle {
+  left: 0;
+  animation: 10s linear 0.5s infinite reverse none shutter-shuttle;
+}
+
+.shuttlet {
+  width: 100%;
+  height: 50%;
+}
+
+.shuttlet-dark {
+  background-color: #161616;
+}
